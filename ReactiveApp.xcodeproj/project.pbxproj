@@ -3,18 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1138E9142603F1DF0076F8E9 /* UIButton+Reactive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1138E9132603F1DF0076F8E9 /* UIButton+Reactive.swift */; };
+		1179D3BB2603EC5E00025DEC /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1179D3BA2603EC5E00025DEC /* ViewModel.swift */; };
 		119618842602B0AD00B6889B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119618832602B0AD00B6889B /* AppDelegate.swift */; };
-		119618862602B0AD00B6889B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119618852602B0AD00B6889B /* SceneDelegate.swift */; };
 		119618882602B0AD00B6889B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119618872602B0AD00B6889B /* ViewController.swift */; };
 		1196188B2602B0AD00B6889B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 119618892602B0AD00B6889B /* Main.storyboard */; };
 		1196188D2602B0AF00B6889B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1196188C2602B0AF00B6889B /* Assets.xcassets */; };
 		119618902602B0AF00B6889B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1196188E2602B0AF00B6889B /* LaunchScreen.storyboard */; };
 		1196189B2602B0AF00B6889B /* ReactiveAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1196189A2602B0AF00B6889B /* ReactiveAppTests.swift */; };
 		119618A62602B0AF00B6889B /* ReactiveAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119618A52602B0AF00B6889B /* ReactiveAppUITests.swift */; };
+		11DC46092603DC0F00883EB1 /* UIControlPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DC46082603DC0F00883EB1 /* UIControlPublisher.swift */; };
+		11DC461A2603DC5600883EB1 /* UIControlSubscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DC46192603DC5600883EB1 /* UIControlSubscription.swift */; };
+		11DC461F2603DC9000883EB1 /* UIControl+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DC461E2603DC9000883EB1 /* UIControl+Extension.swift */; };
+		11DC46252603DE9500883EB1 /* CombineX in Frameworks */ = {isa = PBXBuildFile; productRef = 11DC46242603DE9500883EB1 /* CombineX */; };
+		11DC462E2603DF7600883EB1 /* UISwitch+Reactive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DC462D2603DF7600883EB1 /* UISwitch+Reactive.swift */; };
+		11DC46362603E4D400883EB1 /* AppService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DC46352603E4D400883EB1 /* AppService.swift */; };
+		11DC463C2603E55900883EB1 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DC463B2603E55900883EB1 /* Store.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1138E9132603F1DF0076F8E9 /* UIButton+Reactive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Reactive.swift"; sourceTree = "<group>"; };
+		1179D3BA2603EC5E00025DEC /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		119618802602B0AD00B6889B /* ReactiveApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		119618832602B0AD00B6889B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		119618852602B0AD00B6889B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		119618872602B0AD00B6889B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1196188A2602B0AD00B6889B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1196188C2602B0AF00B6889B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +58,12 @@
 		119618A12602B0AF00B6889B /* ReactiveAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactiveAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		119618A52602B0AF00B6889B /* ReactiveAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactiveAppUITests.swift; sourceTree = "<group>"; };
 		119618A72602B0AF00B6889B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11DC46082603DC0F00883EB1 /* UIControlPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIControlPublisher.swift; sourceTree = "<group>"; };
+		11DC46192603DC5600883EB1 /* UIControlSubscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIControlSubscription.swift; sourceTree = "<group>"; };
+		11DC461E2603DC9000883EB1 /* UIControl+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+Extension.swift"; sourceTree = "<group>"; };
+		11DC462D2603DF7600883EB1 /* UISwitch+Reactive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISwitch+Reactive.swift"; sourceTree = "<group>"; };
+		11DC46352603E4D400883EB1 /* AppService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppService.swift; sourceTree = "<group>"; };
+		11DC463B2603E55900883EB1 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11DC46252603DE9500883EB1 /* CombineX in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +92,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1179D3B92603EC4D00025DEC /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				119618872602B0AD00B6889B /* ViewController.swift */,
+				1179D3BA2603EC5E00025DEC /* ViewModel.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
 		119618772602B0AD00B6889B = {
 			isa = PBXGroup;
 			children = (
@@ -100,12 +125,13 @@
 			isa = PBXGroup;
 			children = (
 				119618832602B0AD00B6889B /* AppDelegate.swift */,
-				119618852602B0AD00B6889B /* SceneDelegate.swift */,
-				119618872602B0AD00B6889B /* ViewController.swift */,
-				119618892602B0AD00B6889B /* Main.storyboard */,
 				1196188C2602B0AF00B6889B /* Assets.xcassets */,
-				1196188E2602B0AF00B6889B /* LaunchScreen.storyboard */,
 				119618912602B0AF00B6889B /* Info.plist */,
+				1196188E2602B0AF00B6889B /* LaunchScreen.storyboard */,
+				119618892602B0AD00B6889B /* Main.storyboard */,
+				11DC463A2603E53F00883EB1 /* Networking */,
+				1179D3B92603EC4D00025DEC /* Screens */,
+				11DC46292603DEB000883EB1 /* UIBindings */,
 			);
 			path = ReactiveApp;
 			sourceTree = "<group>";
@@ -128,6 +154,27 @@
 			path = ReactiveAppUITests;
 			sourceTree = "<group>";
 		};
+		11DC46292603DEB000883EB1 /* UIBindings */ = {
+			isa = PBXGroup;
+			children = (
+				11DC461E2603DC9000883EB1 /* UIControl+Extension.swift */,
+				11DC46082603DC0F00883EB1 /* UIControlPublisher.swift */,
+				11DC46192603DC5600883EB1 /* UIControlSubscription.swift */,
+				11DC462D2603DF7600883EB1 /* UISwitch+Reactive.swift */,
+				1138E9132603F1DF0076F8E9 /* UIButton+Reactive.swift */,
+			);
+			path = UIBindings;
+			sourceTree = "<group>";
+		};
+		11DC463A2603E53F00883EB1 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				11DC46352603E4D400883EB1 /* AppService.swift */,
+				11DC463B2603E55900883EB1 /* Store.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,6 +191,9 @@
 			dependencies = (
 			);
 			name = ReactiveApp;
+			packageProductDependencies = (
+				11DC46242603DE9500883EB1 /* CombineX */,
+			);
 			productName = ReactiveApp;
 			productReference = 119618802602B0AD00B6889B /* ReactiveApp.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +265,9 @@
 				Base,
 			);
 			mainGroup = 119618772602B0AD00B6889B;
+			packageReferences = (
+				11DC46232603DE9500883EB1 /* XCRemoteSwiftPackageReference "CombineX" */,
+			);
 			productRefGroup = 119618812602B0AD00B6889B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,9 +311,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11DC462E2603DF7600883EB1 /* UISwitch+Reactive.swift in Sources */,
+				1179D3BB2603EC5E00025DEC /* ViewModel.swift in Sources */,
 				119618882602B0AD00B6889B /* ViewController.swift in Sources */,
+				11DC46362603E4D400883EB1 /* AppService.swift in Sources */,
+				11DC463C2603E55900883EB1 /* Store.swift in Sources */,
+				11DC461F2603DC9000883EB1 /* UIControl+Extension.swift in Sources */,
+				1138E9142603F1DF0076F8E9 /* UIButton+Reactive.swift in Sources */,
 				119618842602B0AD00B6889B /* AppDelegate.swift in Sources */,
-				119618862602B0AD00B6889B /* SceneDelegate.swift in Sources */,
+				11DC461A2603DC5600883EB1 /* UIControlSubscription.swift in Sources */,
+				11DC46092603DC0F00883EB1 /* UIControlPublisher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,7 +426,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -421,7 +481,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -438,6 +498,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ReactiveApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -456,6 +517,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ReactiveApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -587,6 +649,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		11DC46232603DE9500883EB1 /* XCRemoteSwiftPackageReference "CombineX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/cx-org/CombineX";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		11DC46242603DE9500883EB1 /* CombineX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11DC46232603DE9500883EB1 /* XCRemoteSwiftPackageReference "CombineX" */;
+			productName = CombineX;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 119618782602B0AD00B6889B /* Project object */;
 }
