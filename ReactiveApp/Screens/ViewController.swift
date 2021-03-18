@@ -27,6 +27,7 @@ class ViewController: UIViewController {
     testSubjects()
     testCombineLatest()
     testMerge()
+    testZip()
   }
 
   private func bindViews() {
@@ -45,19 +46,8 @@ class ViewController: UIViewController {
   }
 
   private func bindViewModel() {
-    viewModel.storeListSubject.sink(receiveValue: {print("\n\n Stores: \n\($0)\n\n") })
-//      .sink(
-//        receiveCompletion: { completion in
-//          switch completion {
-//          case .finished:
-//            print("END")
-//            break
-//          case .failure(let error):
-//            print("Error: \(error.localizedDescription)")
-//          }
-//        }, receiveValue: { stores in
-//          print("\n\n Stores: \n\(stores)\n\n")
-//        })
+    viewModel.storeListSubject
+      .sink(receiveValue: {print("\n\n Stores: \n\($0)\n\n") })
       .store(in: &disposeBag)
   }
 
@@ -109,5 +99,26 @@ class ViewController: UIViewController {
       .sink { print("Merge: subscription received value \($0)") }
       .store(in: &disposeBag)
   }
+
+  func testZip() {
+    print("\n\n* Demonstrating Zip")
+    let numbersPub = PassthroughSubject<Int, Never>()
+    let lettersPub = PassthroughSubject<String, Never>()
+    let emojiPub = PassthroughSubject<String, Never>()
+
+    numbersPub
+      .zip(lettersPub, emojiPub)
+      .sink { print("Zip: received value\($0)") }
+      .store(in: &disposeBag)
+
+    numbersPub.send(1)
+    numbersPub.send(2)
+    numbersPub.send(3)
+    lettersPub.send("A")
+    emojiPub.send("😀")
+    lettersPub.send("B")
+    emojiPub.send("🥰")
+  }
+
 }
 
